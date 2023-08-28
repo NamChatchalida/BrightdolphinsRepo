@@ -1,0 +1,366 @@
+.eac-pin-galerie {
+  padding: 5px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .65);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .65);
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+
+.eac-pin-galerie a,
+.eac-pin-galerie a:visited,
+.eac-pin-galerie a:active {
+  text-decoration: none !important;
+  outline: 0 none !important;
+}
+
+.pin-galerie {
+  column-gap: 0.5em;
+  margin: 1em auto;
+}
+
+/* Formate le wrapper options, champ texte, bouton et loader */
+.pin-select-item-list {
+  text-align: center;
+  margin: 1em auto;
+}
+
+.pin-select-item-list::after {
+  content: '';
+  border-top: 1px solid var(--eac-color-primary);
+  width: 40%;
+  max-width: 40%;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Formate la liste des options et le champ texte */
+.pin-options-items-list,
+.pin-select-item {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.pin-item-header span {
+  display: block;
+  line-height: 1.3em;
+  font-size: 0.9em;
+}
+
+.pin-item-header h2 {
+  font-weight: 800;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  color: #9c8468;
+  opacity: 0.3;
+  font: 1.7em 'Museo700';
+}
+
+/* Formate les items */
+.pin-galerie__item {
+  display: inline-block;
+  margin: 0 0 0.5em;
+  width: 100%;
+  transform: scale(0);
+}
+
+/* Formate la liste (Select & Input) des flux RSS */
+#pin_options_items,
+#pin_item_name {
+  font-size: .9em;
+  background-color: var(--eac-bg-input);
+  height: 2.2em;
+  /*line-height: 2.2em;*/
+  width: 20em;
+  padding: 0 5px;
+  white-space: nowrap;
+  border-radius: 5px;
+  border-color: #007cba;
+  box-shadow: 0 0 0 1px #007cba;
+  border-color: var(--eac-color-primary);
+  box-shadow: 0 0 0 1px var(--eac-color-primary);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pin-options-items {
+  max-width: none;
+  min-width: unset;
+}
+
+/* Formate le titre */
+.pin-galerie__item-link-post {
+  text-align: center;
+}
+
+.pin-galerie__item-link-post .pin-galerie__item-titre {
+  font-size: 0.8em;
+  font-weight: 600;
+  margin: 5px 0;
+  line-height: 1.3em;
+}
+
+/* Formate le résumé, la date et l'auteur */
+.pin-galerie__content .pin-galerie__item-description p,
+.pin-galerie__item-date,
+.pin-galerie__item-auteur {
+  font-size: 0.7em;
+  line-height: 1.3em;
+  color: #919ca7;
+  font-weight: unset;
+}
+
+.pin-galerie__item-description {
+  margin-bottom: 5px;
+}
+
+.pin-galerie__item-date,
+.pin-galerie__item-auteur {
+  font-size: 0.6em;
+}
+
+.pin-galerie__item-date i,
+.pin-galerie__item-auteur i {
+  margin-right: 5px;
+  color: blue;
+  vertical-align: baseline;
+}
+
+/* Formate l'image */
+.pin-galerie__item-image {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* Les styles */
+.pin-galerie__item.style-0,
+.pin-galerie__item.style-1,
+.pin-galerie__item.style-2,
+.pin-galerie__item.style-3,
+.pin-galerie__item.style-4,
+.pin-galerie__item.style-5,
+.pin-galerie__item.style-6,
+.pin-galerie__item.style-7 {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.pin-galerie__item.style-0 {
+  border-bottom: 1px solid #efefef;
+}
+
+.pin-galerie__item.style-1 {
+  padding: 5px 5px 15px 5px;
+  border: solid 1px #EFEFEF;
+  -webkit-box-shadow: 1px 1px 5px #999;
+  box-shadow: 1px 1px 5px #999;
+}
+
+.pin-galerie__item.style-2 {
+  -webkit-border-radius: 0px 0px 5px 5px;
+  border: 1px groove #4a164a;
+  -webkit-box-shadow: 1px 1px 5px 2px #656565;
+  box-shadow: 1px 1px 5px 2px #656565;
+}
+
+.pin-galerie__item.style-3 {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.pin-galerie__item.style-4 {
+  -webkit-box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.6);
+}
+
+.pin-galerie__item.style-5 {
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+.pin-galerie__item.style-6 {
+  border: 7px solid;
+  border-image: radial-gradient(rgb(0, 143, 104), rgb(250, 224, 66)) 1;
+}
+
+.pin-galerie__item.style-7 {
+  border: 7px solid;
+  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
+}
+
+/* Formate les points de rupture */
+
+/** Desktop et Widescreen */
+@media (min-width: 1201px) {
+  .responsive-1 .pin-galerie {
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+
+  .responsive-2 .pin-galerie {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+
+  .responsive-3 .pin-galerie {
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+
+  .responsive-4 .pin-galerie {
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+
+  .responsive-5 .pin-galerie {
+    -webkit-column-count: 5;
+    column-count: 5;
+  }
+
+  .responsive-6 .pin-galerie {
+    -webkit-column-count: 6;
+    column-count: 6;
+  }
+}
+
+/** Tablet Extra @since 1.8.7 */
+@media (max-width: 1200px) {
+  .responsive-tablet_extra-1 .pin-galerie {
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+
+  .responsive-tablet_extra-2 .pin-galerie {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+
+  .responsive-tablet_extra-3 .pin-galerie {
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+
+  .responsive-tablet_extra-4 .pin-galerie {
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+
+  .responsive-tablet_extra-5 .pin-galerie {
+    -webkit-column-count: 5;
+    column-count: 5;
+  }
+
+  .responsive-tablet_extra-6 .pin-galerie {
+    -webkit-column-count: 6;
+    column-count: 6;
+  }
+}
+
+/** Tablet */
+@media (max-width: 1024px) {
+  .responsive-tablet-1 .pin-galerie {
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+
+  .responsive-tablet-2 .pin-galerie {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+
+  .responsive-tablet-3 .pin-galerie {
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+
+  .responsive-tablet-4 .pin-galerie {
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+
+  .responsive-tablet-5 .pin-galerie {
+    -webkit-column-count: 5;
+    column-count: 5;
+  }
+
+  .responsive-tablet-6 .pin-galerie {
+    -webkit-column-count: 6;
+    column-count: 6;
+  }
+}
+
+/** Mobile Extra @since 1.8.7 */
+@media (max-width: 880px) {
+  .responsive-mobile_extra-1 .pin-galerie {
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+
+  .responsive-mobile_extra-2 .pin-galerie {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+
+  .responsive-mobile_extra-3 .pin-galerie {
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+
+  .responsive-mobile_extra-4 .pin-galerie {
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+
+  .responsive-mobile_extra-5 .pin-galerie {
+    -webkit-column-count: 5;
+    column-count: 5;
+  }
+
+  .responsive-mobile_extra-6 .pin-galerie {
+    -webkit-column-count: 6;
+    column-count: 6;
+  }
+}
+
+/** Mobile */
+@media (max-width: 767px) {
+  .responsive-mobile-1 .pin-galerie {
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+
+  .responsive-mobile-2 .pin-galerie {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+
+  .responsive-mobile-3 .pin-galerie {
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+
+  .responsive-mobile-4 .pin-galerie {
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+
+  .responsive-mobile-5 .pin-galerie {
+    -webkit-column-count: 5;
+    column-count: 5;
+  }
+
+  .responsive-mobile-6 .pin-galerie {
+    -webkit-column-count: 6;
+    column-count: 6;
+  }
+}
+
+/** Mise en colonne des options, input, bouton... */
+@media (max-width: 667px) {
+
+  .pin-options-items-list,
+  .pin-select-item {
+    display: inline-block;
+  }
+}

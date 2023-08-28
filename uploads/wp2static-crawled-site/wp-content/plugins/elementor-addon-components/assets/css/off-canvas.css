@@ -1,0 +1,292 @@
+/** le composant et ses liens */
+.eac-off-canvas a,
+.eac-off-canvas a:visited,
+.eac-off-canvas a:active {
+	text-decoration: none !important;
+	outline: 0 none !important;
+}
+
+.eac-off-canvas::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/** Le canvas */
+/* Leaflet openstreetmap z-index = 1000, sticky z-index = 9900 */
+.oc-offcanvas__wrapper-canvas {
+	position: fixed;
+	display: none;
+	height: 100%;
+	background-color: #FFF;
+	z-index: 10001;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+/** L'overlay */
+/* canvas z-index = 10001, Leaflet openstreetmap z-index = 1000, sticky z-index = 9900 */
+.oc-offcanvas__wrapper-overlay {
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .2);
+	z-index: 10000;
+}
+
+/** Position du canvas */
+.oc-offcanvas__canvas-right {
+	top: 0;
+	right: 0;
+	box-shadow: -4px 0 3px rgba(0, 0, 0, .6);
+}
+
+.oc-offcanvas__canvas-left {
+	top: 0;
+	left: 0;
+	box-shadow: 4px 0 3px rgba(0, 0, 0, .6);
+}
+
+.oc-offcanvas__canvas-bottom {
+	left: 0;
+	bottom: 0;
+	box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+}
+
+.oc-offcanvas__canvas-top {
+	left: 0;
+	top: 0;
+	box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+}
+
+/** L'entête du canvas */
+.oc-offcanvas__canvas-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 50px;
+	margin: 10px 5px;
+}
+
+/** Le bouton de fermeture */
+.oc-offcanvas__canvas-close {
+	width: 50px;
+	text-align: center;
+}
+
+.oc-offcanvas__canvas-close span {
+	color: black;
+	font-size: 25px;
+	font-weight: 800;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	line-height: 40px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+/** Le titre */
+.oc-offcanvas__canvas-title {
+	text-align: center;
+	word-wrap: break-word;
+	width: 100%;
+	margin: 0 5px;
+}
+
+.oc-offcanvas__canvas-title h2 {
+	font-size: 1.3em;
+	margin: 0;
+}
+
+/** Le bouton de fermeture et le trigger texte */
+.oc-offcanvas__canvas-close,
+.oc-offcanvas__wrapper-trigger {
+	cursor: pointer;
+}
+
+/** Le contenu du canvas  */
+.oc-offcanvas__canvas-content {
+	padding: 0 10px;
+	display: none;
+}
+
+/** Type de bouton de déclenchement, position  et taille */
+.oc-offcanvas__wrapper-btn {
+	background: unset;
+	min-width: unset;
+}
+
+.oc-offcanvas__wrapper-btn.sticky-button-left {
+	position: fixed;
+	top: 50%;
+	left: 0;
+	transform-origin: top left;
+	transform: rotate(-90deg) translateX(-50%);
+	z-index: 8;
+}
+
+.oc-offcanvas__wrapper-btn.sticky-button-right {
+	position: fixed;
+	top: 50%;
+	right: 0;
+	transform-origin: top right;
+	transform: rotate(90deg) translateX(50%);
+	z-index: 8;
+}
+
+.oc-offcanvas__btn-sm {
+	padding: 8px 14px;
+	font-size: 14px;
+	line-height: 1em;
+}
+
+.oc-offcanvas__btn-md {
+	padding: 10px 16px;
+	font-size: 16px;
+	line-height: 1.2em;
+}
+
+.oc-offcanvas__btn-lg {
+	padding: 12px 24px;
+	font-size: 18px;
+	line-height: 1.3333em;
+}
+
+.oc-offcanvas__btn-block {
+	display: block;
+	padding: 10px 16px;
+	font-size: 18px;
+	width: 100%;
+}
+
+/** Marge entre les widgets */
+.oc-offcanvas__canvas-content .widget {
+	margin: 0 0 15px;
+	border-radius: 8px;
+}
+
+/** Le style du contenu 'menu' */
+.oc-offcanvas__menu-wrapper .menu,
+.oc-offcanvas__menu-wrapper .menu li.menu-item,
+.oc-offcanvas__menu-wrapper .menu li.page_item {
+	display: block;
+}
+
+.oc-offcanvas__menu-wrapper>ul {
+	list-style: none;
+	margin: 0 0 1em 1.5em;
+}
+
+.oc-offcanvas__menu-wrapper ul li {
+	list-style: none;
+}
+
+.oc-offcanvas__menu-wrapper ul ul li[class*="current-menu-item"]>a,
+.oc-offcanvas__menu-wrapper ul li[class*="current-menu-item"] {
+	background-color: lightblue;
+}
+
+.oc-offcanvas__menu-wrapper ul li::before {
+	font-family: 'Font Awesome 5 Free';
+	content: '\f152';
+	margin-right: 5px;
+}
+
+.oc-offcanvas__menu-wrapper ul li>ul {
+	list-style: none;
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+/** Le style du contenu 'widget' */
+/** Les listes */
+.oc-offcanvas__canvas-content .widget>ul,
+.oc-offcanvas__canvas-content aside.widget ul {
+	list-style: none;
+	margin: 0 0 1em 1.5em;
+}
+
+.oc-offcanvas__canvas-content .widget ul li {
+	padding-bottom: 0;
+}
+
+.oc-offcanvas__canvas-content .widget ul li::before {
+	font-family: 'Font Awesome 5 Free';
+	content: '\f152';
+	margin-right: 5px;
+}
+
+/** Sidebar Widget Image */
+.oc-offcanvas__canvas-content aside.widget.widget_media_image img {
+	text-align: center;
+	padding: 5px 5px 0 5px;
+}
+
+/** Sidebar Widget Custom HTML */
+.oc-offcanvas__canvas-content aside.widget .custom-html-widget {
+	padding: 0 10px 10px;
+}
+
+/** Sidebar Widget Custom HTML pour les sections stretched Elementor */
+.oc-offcanvas__canvas-content section.elementor-section-stretched,
+.oc-offcanvas__canvas-content aside.widget .custom-html-widget section.elementor-section-stretched {
+	max-width: 100%;
+	left: 0 !important;
+}
+
+/** Sidebar Widget Video */
+.oc-offcanvas__canvas-content aside.widget .wp-video {
+	padding: 0 5px 5px;
+}
+
+/** Sidebar Widget Gallery */
+.oc-offcanvas__canvas-content aside.widget .gallery {
+	margin-bottom: 1em;
+}
+
+/** Le titre widget standard et sidebar */
+.oc-offcanvas__canvas-content .widget .widgettitle,
+.oc-offcanvas__canvas-content .widget .widget-title {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+	background-color: antiquewhite;
+	line-height: 2em;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+/** Le formulaire standard Search */
+.oc-offcanvas__canvas-content .widget.widget_search .search-form {
+	padding: 10px;
+}
+
+.oc-offcanvas__canvas-content .widget.widget_search .search-field {
+	width: 20em;
+	height: 2.5em;
+	border-color: var(--eac-color-primary);
+	box-shadow: 0 0 0 1px var(--eac-color-primary);
+	background-color: white;
+	font-size: .8em;
+	border-radius: 5px;
+}
+
+/** Le nuage de tags */
+.oc-offcanvas__canvas-content .widget .tagcloud {
+	padding: 5px;
+}
+
+/** Le calendrier */
+.oc-offcanvas__canvas-content .widget .calendar_wrap {
+	margin: 10px;
+}
+
+.oc-offcanvas__canvas-content .widget.widget_calendar caption,
+.oc-offcanvas__canvas-content .widget.widget_calendar td,
+.oc-offcanvas__canvas-content .widget.widget_calendar th {
+	text-align: center;
+}

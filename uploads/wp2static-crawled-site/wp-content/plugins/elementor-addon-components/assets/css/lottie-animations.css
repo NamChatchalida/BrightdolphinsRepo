@@ -1,0 +1,39 @@
+/** le composant et ses liens */
+.eac-lottie-animations a,
+.eac-lottie-animations a:visited,
+.eac-lottie-animations a:active {
+	text-decoration: none !important;
+	outline: 0 none !important;
+}
+
+.eac-lottie-animations {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.eac-lottie-animations,
+.lottie-anim_wrapper {
+	position: relative;
+	line-height: 0;
+}
+
+/** Éditeur Elementor background column force les styles */
+.lottie-anim_wrapper.lottie-anim_wrapper-bg svg {
+	width: 100%;
+	height: 100%;
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.lottie-anim_wrapper.lottie-anim_wrapper-bg svg:not(:root) {
+	overflow: hidden;
+}
+
+.lottie-anim_wrapper-url {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}

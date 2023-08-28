@@ -1,0 +1,43 @@
+{
+    "title": "Répartition de la population par sexe/âge. 1er janvier 2020, France (INSEE)",
+    "labels": "Nombre d'hommes,Nombre de femmes,Ensemble",
+    "datasets":
+    [{
+            "label": "2019",
+            "data": "360,346.3,706.3"
+        }, {
+            "label": "1999",
+            "data": "398.8,379.7,778.5"
+        }, {
+            "label": "1984",
+            "data": "396.4,421.1,817.6"
+        }, {
+            "label": "1969",
+            "data": "439.3,449.5,888.9"
+        }, {
+            "label": "1959",
+            "data": "407,438.8,845.8"
+        }, {
+            "label": "1955",
+            "data": "377.4,421.9,799.4"
+        }, {
+            "label": "1919",
+            "data": "3.5,18.3,21.8"
+    }],
+    "options": {
+        "stacked": "1",
+        "stepped": "0",
+        "x_axis": {
+            "title": "Année de naissance / Sexe"
+        },
+        "y_axis": {
+            "title": "En milliers",
+            "suffix": ""
+        },
+        "y_axis2": {
+            "display": "0",
+            "title": "",
+            "suffix": ""
+        }
+    }
+}

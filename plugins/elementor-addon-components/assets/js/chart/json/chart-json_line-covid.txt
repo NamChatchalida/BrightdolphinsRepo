@@ -1,0 +1,31 @@
+{
+    "title": "COVID Mars-Novembre 2020",
+    "labels": "Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre",
+    "datasets":
+    [{
+            "label": "Bourgogne-Franche-Comté",
+            "data": "3221,3412,2430"
+        }, {
+            "label": "Bretagne",
+            "data": "3258,2975,2766"
+		}, {
+            "label": "Île-de-France",
+            "data": "9927,14330,6622"
+    }],
+    "options": {
+        "stacked": "1",
+        "stepped": "0",
+        "x_axis": {
+            "title": "Mois"
+        },
+        "y_axis": {
+            "title": "Nb Mortadem",
+            "suffix": ""
+        },
+        "y_axis2": {
+            "display": "0",
+            "title": "",
+            "suffix": ""
+        }
+    }
+}

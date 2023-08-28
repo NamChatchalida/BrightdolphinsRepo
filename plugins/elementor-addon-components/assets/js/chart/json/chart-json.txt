@@ -1,0 +1,28 @@
+{
+    "title": "Chart title",
+    "labels": "Labels",
+    "datasets":
+    [{
+            "label": "Serie label 1",
+            "data": "1"
+        }, {
+            "label": "Serie label 2",
+            "data": "2"
+    }],
+    "options": {
+        "stacked": "0",
+        "stepped": "0",
+        "x_axis": {
+            "title": "X Axis title"
+        },
+        "y_axis": {
+            "title": "Y Axis title",
+            "suffix": ""
+        },
+        "y_axis2": {
+            "display": "0",
+            "title": "Y Axis 2 title",
+            "suffix": ""
+        }
+    }
+}

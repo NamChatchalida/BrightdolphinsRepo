@@ -1,0 +1,132 @@
+/* Le wrapper */
+.eac-search_form-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Le bouton ouverture/fermeture du formulaire */
+.eac-search_form-wrapper button[type="button"].eac-search_button-toggle,
+.eac-search_form-wrapper button[type="button"].eac-search_button-toggle:focus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 12px 15px !important;
+    width: 38px;
+	min-width: unset;
+    height: 38px;
+    outline: unset;
+    border: unset !important;
+    border-radius: 0;
+	box-shadow: unset;
+	-webkit-box-shadow: unset;
+    appearance: button;
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+.eac-search_form-wrapper button[type="button"].eac-search_button-toggle {
+    background: unset;
+}
+
+.eac-search_form-wrapper button[type="button"].eac-search_button-toggle i {
+    font-size: 17px;
+    color: white;
+}
+
+.eac-search_form-wrapper .eac-search_form {
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    margin: 0;
+    background-color: #fff;
+    /*border-radius: 8px 0 0 8px;*/
+    width: 100%;
+    display: block;
+}
+
+/* Le conteneur du formulaire */
+.eac-search_form-container {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 4px !important;
+	max-height: 38px;
+    margin-bottom: 0 !important;
+    outline: 1px solid gray;
+}
+
+/* Le champ de recherche */
+.eac-search_form-container input[type='search'].eac-search_form-input {
+    display: inline-block;
+    font-size: 0.9em;
+    height: 30px;
+    min-height: unset;
+    width: 100%;
+    padding: 0;
+    padding-left: 10px;
+    margin: 0;
+    color: #666666;
+    background: unset;
+    background-image: unset;
+    background-color: antiquewhite;
+    border: 2px solid #cccccc;
+    border-radius: 0;
+}
+
+.eac-search_form-container input[type='search'].eac-search_form-input:focus,
+.eac-search_form-container input[type='search'].eac-search_form-input:focus-visible {
+    color: #222222;
+    background-color: antiquewhite;
+    border: 2px solid #cccccc !important;
+    box-shadow: unset;
+    outline: unset;
+}
+
+/* Les icones dans l'input de recherche */
+.eac-search_form-container .clear-icon,
+.eac-search_form-container .search-icon {
+    position: absolute;
+    right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.eac-search_form-container .clear-icon {
+    cursor: pointer;
+}
+
+/* Le wrapper du select pour filtrer la recherche */
+.eac-search_select-wrapper {
+    position: relative;
+    display: none;
+    z-index: 2;
+    outline: 1px solid gray;
+}
+
+/* Le champ select des post_type */
+.eac-search_select-wrapper .eac-search_select-post-type {
+    display: inline-block;
+    appearance: auto;
+    background-image: unset;
+    background-color: white;
+    padding: 0 5px !important;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    height: 38px;
+    width: 75px;
+}
+
+.eac-search_select-wrapper .eac-search_select-post-type,
+.eac-search_select-wrapper .eac-search_select-post-type option {
+    font-size: 13px;
+}
+
+.eac-search_select-wrapper .eac-search_select-post-type:focus {
+    box-shadow: unset;
+}

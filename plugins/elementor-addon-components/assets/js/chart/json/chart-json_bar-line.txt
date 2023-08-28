@@ -1,0 +1,50 @@
+{
+    "title": "Le taux de fécondité en Europe",
+    "labels": "2017,2018",
+    "datasets":
+    [{
+            "label": "Belgique",
+            "data": "1.65,1.62"
+        }, {
+            "label": "France",
+            "data": "1.9,1.88"
+        }, {
+            "label": "Danemark",
+            "data": "1.75,1.73"
+        }, {
+            "label": "Allemagne",
+            "data": "1.54,1.57"
+        }, {
+            "label": "Ireland",
+            "data": "1.77,1.75"
+        }, {
+            "label": "Grèce",
+            "data": "1.35,1.35"
+        }, {
+            "label": "Espagne",
+            "data": "1.31,1.26"
+        }, {
+            "label": "Italie",
+            "data": "1.32,1.29"
+        }, {
+            "type": "line",
+            "label": "Moyenne UE",
+            "data": "1.55,1.56"
+    }],
+    "options": {
+        "stacked": "0",
+        "stepped": "0",
+        "x_axis": {
+            "title": "Années/Pays UE"
+        },
+        "y_axis": {
+            "title": "Rate",
+            "suffix": "%"
+        },
+        "y_axis2": {
+            "display": "0",
+            "title": "",
+            "suffix": ""
+        }
+    }
+}

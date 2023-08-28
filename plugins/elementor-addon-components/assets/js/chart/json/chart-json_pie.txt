@@ -1,0 +1,25 @@
+{
+    "title": "Popularité des languages en 2019",
+    "labels": "Java,Javascript,PHP,c#,Python,C++,C,R",
+    "datasets":
+    [{
+            "label": "Serie",
+            "data": "24.8,12.9,11.9,11.4,10.8,7.3,4.6,2.2"
+    }],
+    "options": {
+        "stacked": "0",
+        "stepped": "0",
+        "x_axis": {
+            "title": ""
+        },
+        "y_axis": {
+            "title": "",
+            "suffix": ""
+        },
+        "y_axis2": {
+            "display": "0",
+            "title": "",
+            "suffix": ""
+        }
+    }
+}

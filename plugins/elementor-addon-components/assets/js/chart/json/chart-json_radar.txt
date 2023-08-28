@@ -1,0 +1,31 @@
+{
+    "title": "Radar Chart with three travel series",
+    "labels": "Lisbonne,Paris,Berlin,Moscou,Rome,Barcelone",
+    "datasets":
+    [{
+            "label": "Program 1",
+            "data": "5,5,5,5,5,5"
+        },{
+            "label": "Program 2",
+            "data": "7,3,3,3,7,7"
+        },{
+            "label": "Program 3",
+            "data": "4,7,7,7,3,2"
+    }],
+    "options": {
+        "stacked": "0",
+        "stepped": "0",
+        "x_axis": {
+            "title": ""
+        },
+        "y_axis": {
+            "title": "",
+            "suffix": ""
+        },
+        "y_axis2": {
+            "display": "0",
+            "title": "",
+            "suffix": ""
+        }
+    }
+}

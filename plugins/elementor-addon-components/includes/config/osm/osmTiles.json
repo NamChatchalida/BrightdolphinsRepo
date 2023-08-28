@@ -1,0 +1,158 @@
+{
+	"osm_basic": {
+		"url": "https://{s}.tile.osm.org/{z}/{x}/{y}.png",
+		"options": {
+			"title": "Basic",
+			"type": "tile",
+			"attribution": "&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors",
+			"maxZoom": 19
+		}
+	},
+	"osm_fr": {
+		"url": "https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png",
+		"options": {
+			"title": "France",
+			"type": "tile",
+			"attribution": "&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors",
+			"maxZoom": 20
+		}
+	},
+	"osm_de": {
+		"url": "https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png",
+		"options": {
+			"title": "Deutschland",
+			"type": "tile",
+			"attribution": "&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors",
+			"maxZoom": 20
+		}
+	},
+	"stamenToner": {
+		"url": "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+		"options": {
+			"title": "Toner",
+			"type": "tile",
+			"attribution": "Map tiles by <a href='http://stamen.com'>Stamen Design</a>, <a href='http://creativecommons.org/licenses/by/3.0'>CC BY 3.0</a> — Map data &copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors, <a href='http://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>",
+			"subdomains": "abcd",
+			"maxZoom": 20,
+			"minZoom": 0
+		}
+	},
+	"stamenLite": {
+		"url": "https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png",
+		"options": {
+			"title": "Toner Lite",
+			"type": "tile",
+			"attribution": "Map tiles by <a href='http://stamen.com'>Stamen Design</a>, <a href='http://creativecommons.org/licenses/by/3.0'>CC BY 3.0</a> — Map data &copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors, <a href='http://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>",
+			"subdomains": "abcd",
+			"maxZoom": 20,
+			"minZoom": 0
+		}
+	},
+	"stamenColor": {
+		"url": "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png",
+		"options": {
+			"title": "Water Color",
+			"type": "tile",
+			"attribution": "Map tiles by <a href='http://stamen.com'>Stamen Design</a>, <a href='http://creativecommons.org/licenses/by/3.0'>CC BY 3.0</a> — Map data &copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors, <a href='http://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>",
+			"subdomains": "abcd",
+			"maxZoom": 16,
+			"minZoom": 1
+		}
+	},
+	"stamenTerrain": {
+		"url": "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png",
+		"options": {
+			"title": "Terrain",
+			"type": "tile",
+			"attribution": "Map tiles by <a href='http://stamen.com'>Stamen Design</a>, <a href='http://creativecommons.org/licenses/by/3.0'>CC BY 3.0</a> — Map data &copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors, <a href='http://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>",
+			"subdomains": "abcd",
+			"maxZoom": 18,
+			"minZoom": 0
+		}
+	},
+	"topoMap": {
+		"url": "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+		"options": {
+			"title": "Topography",
+			"type": "tile",
+			"attribution": "Map tiles by <a href='http://opentopomap.org'>Open Topomap</a>, <a href='http://creativecommons.org/licenses/by/3.0'>CC BY 3.0</a> — Map data &copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors",
+			"subdomains": "abc",
+			"maxZoom": 17,
+			"minZoom": 0
+		}
+	},
+	"CartoDB": {
+		"url": "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+		"options": {
+			"title": "Carto DB",
+			"type": "tile",
+			"attribution": "Map data &copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors, &copy; <a href='https://carto.com/attributions'>CARTO</a>",
+			"subdomains": "abcd",
+			"maxZoom": 19
+		}
+	},
+	"Esri_Delorme": {
+		"url": "https://server.arcgisonline.com/ArcGIS/rest/services/Specialty/DeLorme_World_Base_Map/MapServer/tile/{z}/{y}/{x}",
+		"options": {
+			"title": "Esri Delorme",
+			"type": "tile",
+			"minZoom": 1,
+			"maxZoom": 11,
+			"attribution": "Map data &copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors, &copy; Esri"
+		}
+	},
+	"Esri_Imagery": {
+		"url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+		"options": {
+			"title": "Esri Imagery",
+			"type": "tile",
+			"maxZoom": 11,
+			"attribution": "Map data &copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors, &copy; Esri"
+		}
+	},
+	"Esri_Relief": {
+		"url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}",
+		"options": {
+			"title": "Esri Relief",
+			"type": "tile",
+			"maxZoom": 13,
+			"attribution": "Map data &copy; <a href='http://openstreetmap.org'>OpenStreetMap</a> contributors, &copy; Esri"
+		}
+	},
+	"Trails_hiking": {
+		"url": "https://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png",
+		"options": {
+			"title": "Trail Hicking",
+			"type": "overlay",
+			"maxZoom": 18,
+			"attribution": "Map style: &copy; <a href='https://waymarkedtrails.org'>waymarkedtrails.org</a> (<a href='https://creativecommons.org/licenses/by-sa/3.0/'>CC-BY-SA</a>)"
+		}
+	},
+	"Trails_cycling": {
+		"url": "https://tile.waymarkedtrails.org/cycling/{z}/{x}/{y}.png",
+		"options": {
+			"title": "Trail Cycling",
+			"type": "overlay",
+			"maxZoom": 18,
+			"attribution": "Map style: &copy; <a href='https://waymarkedtrails.org'>waymarkedtrails.org</a> (<a href='https://creativecommons.org/licenses/by-sa/3.0/'>CC-BY-SA</a>)"
+		}
+	},
+	"Trails_mtb": {
+		"url": "https://tile.waymarkedtrails.org/mtb/{z}/{x}/{y}.png",
+		"options": {
+			"title": "Trail MTB",
+			"type": "overlay",
+			"maxZoom": 18,
+			"attribution": "Map style: &copy; <a href='https://waymarkedtrails.org'>waymarkedtrails.org</a> (<a href='https://creativecommons.org/licenses/by-sa/3.0/'>CC-BY-SA</a>)"
+		}
+	},
+	"Trails_slopes": {
+		"url": "https://tile.waymarkedtrails.org/slopes/{z}/{x}/{y}.png",
+		"options": {
+			"title": "Slopes",
+			"type": "overlay",
+			"maxZoom": 18,
+			"attribution": "Map style: &copy; <a href='https://waymarkedtrails.org'>waymarkedtrails.org</a> (<a href='https://creativecommons.org/licenses/by-sa/3.0/'>CC-BY-SA</a>)"
+		}
+	}
+}

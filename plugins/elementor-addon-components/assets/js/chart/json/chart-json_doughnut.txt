@@ -1,0 +1,28 @@
+{
+    "title": "Mix Electrique G20 (2000/2018 - 13.300/22.500 TWh)",
+    "labels": "Coal,Gas,Oil,Nuclear,Hydro,Wind,Solar,Biomass",
+    "datasets":
+    [{
+            "label": "Mix électrique 2018",
+            "data": "9450,4275,450,2475,3375,1125,675,450"
+        },{
+            "label": "Mix électrique 2020",
+            "data": "5586,2128,798,2394,1995,133,0,0"
+    }],
+    "options": {
+        "stacked": "0",
+        "stepped": "0",
+        "x_axis": {
+            "title": ""
+        },
+        "y_axis": {
+            "title": "",
+            "suffix": ""
+        },
+        "y_axis2": {
+            "display": "0",
+            "title": "",
+            "suffix": ""
+        }
+    }
+}

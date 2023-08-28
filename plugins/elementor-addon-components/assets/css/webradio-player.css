@@ -1,0 +1,105 @@
+.eac-lecteur-audio {
+	text-align: center;
+	background-color: #FFF;
+	padding: 5px;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .65);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .65);
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+
+.la-select-item-list,
+.la-lecteur-audio {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.la-lecteur-audio {
+	margin-left: 10px;
+}
+
+/* Formate la liste (Select & Input) des flux Audio */
+#la_options_items {
+	font-size: .9em;
+	background-color: var(--eac-bg-input);
+	height: 2.2em;
+	line-height: 2.2em;
+	width: 20em;
+	padding: 0 5px;
+	white-space: nowrap;
+	border-radius: 5px;
+	border-color: #007cba;
+	box-shadow: 0 0 0 1px #007cba;
+	border-color: var(--eac-color-primary);
+	box-shadow: 0 0 0 1px var(--eac-color-primary);
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.la-options-items {
+	max-width: none;
+	min-width: unset;
+}
+
+/* Mise en colonne des options */
+@media (max-width: 667px) {
+
+	.la-select-item-list,
+	.la-lecteur-audio {
+		display: inline-block;
+		margin-top: 10px;
+	}
+
+	.la-lecteur-audio {
+		margin-left: 0;
+	}
+}
+
+/* --------------------------------
+* CSS original
+*--------------------------------*/
+
+.la-lecteur-audio .control {
+	opacity: 0;
+	/* transition: opacity .2s linear; */
+	pointer-events: none;
+	cursor: pointer;
+}
+
+.la-lecteur-audio .not-started .play,
+.la-lecteur-audio .paused .play {
+	opacity: 1;
+}
+
+.la-lecteur-audio .playing .pause {
+	opacity: 1;
+}
+
+.la-lecteur-audio .playing .play {
+	opacity: 0;
+}
+
+.la-lecteur-audio .ended .stop {
+	opacity: 1;
+	pointer-events: none;
+}
+
+.la-lecteur-audio .precache-bar .done {
+	opacity: 0;
+}
+
+.la-lecteur-audio .not-started .progress-bar,
+.la-lecteur-audio .ended .progress-bar {
+	display: none;
+}
+
+.la-lecteur-audio .ended .progress-track {
+	stroke-opacity: 1;
+}
+
+.la-lecteur-audio .progress-bar,
+.la-lecteur-audio .precache-bar {
+	transition: stroke-dashoffset 500ms;
+	stroke-dasharray: 298.1371428256714;
+	stroke-dashoffset: 298.1371428256714;
+}

@@ -1,0 +1,473 @@
+/** jQuery dialog */
+#eac-dialog_acf-json p a,
+#eac-dialog_grant-option p a {
+	outline: none;
+	box-shadow: none;
+}
+
+#eac-dialog_acf-json p,
+#eac-dialog_grant-option p {
+	font-size: 15px;
+}
+
+/** Vue d'administration des articles Options page */
+.column-eac_group {
+	width: 17em;
+}
+
+.column-eac_field {
+	width: 25em;
+}
+
+.column-eac_field_saved {
+	width: 3em;
+}
+
+.column-eac_id {
+	width: 3em;
+}
+
+.column-eac_type {
+	width: 6em;
+}
+
+/** Les étiquettes de promotion des composants */
+.eac-promotion-new:after {
+	content: "New";
+	background: green;
+}
+
+.eac-promotion-updated:after {
+	content: "Updated";
+	background: blue;
+}
+
+.eac-promotion-suppressed:after {
+	content: "Removed in next version";
+	background: red;
+	width: 150px !important;
+}
+
+div[class*="eac-promotion-"]:after {
+	position: absolute;
+	bottom: 40px;
+	font-size: 12px;
+	color: white;
+	left: 10px;
+	font-weight: 600;
+	border-radius: 4px;
+	width: 65px;
+	text-align: center;
+	height: 26px;
+	line-height: 25px;
+}
+
+/** @since 1.9.9 Nouvelle mise en page en flex  */
+.eac-elements__table-common {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: #f0f8ff;
+	padding: 10px;
+	row-gap: 10px;
+	column-gap: 10px;
+}
+
+.eac-elements__table-common.wc {
+	flex-direction: column;
+	align-items: start;
+}
+
+.eac-elements__table-common.header {
+	width: 100%;
+	padding: 10px 0;
+	justify-content: flex-start;
+}
+
+.eac-elements__common-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: calc(100% / 4 - 10px);
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: inset 2px 2px #FFEFD6;
+}
+
+/** L'onglet WC intégration */
+.eac-elements__common-item.redirect.hide,
+.eac-elements__common-item.breadcrumb.hide,
+.eac-elements__common-item.metas.hide,
+.eac-elements__common-item.request.hide,
+.eac-elements__common-item.pages.hide {
+	display: none;
+}
+
+.eac-elements__table-common.wc .eac-elements__common-item {
+	width: 100%;
+	justify-content: flex-start;
+}
+
+.eac-elements__common-item.request,
+.eac-elements__common-item.pages {
+	margin-left: 20px;
+	width: calc(100% - 20px) !important;
+}
+
+.eac-elements__table-common.wc .eac-elements__common-item .info {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.eac-elements__common-item.config {
+	height: 56.6px;
+	align-items: center;
+	justify-content: space-around !important;
+}
+
+.eac-elements__common-item.config>span {
+	font-size: 1.05rem !important;
+}
+
+/**----------*/
+.eac-elements__common-item.header {
+	width: 35%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.eac-elements__item-content {
+	font-size: 15px;
+	font-weight: 600;
+	margin-left: 10px;
+}
+
+.eac-elements__item-content.header {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/*----------------------------------------------*/
+/** Aide en ligne des composants/Fonctionnalités */
+.eac-elements__table-common .eac-admin-help {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: lightgray;
+	border-radius: 50%;
+	vertical-align: top;
+	outline: 0 !important;
+	text-align: center;
+}
+
+.eac-elements__table-common a,
+.eac-elements__table-common a:visited,
+.eac-elements__table-common a:active,
+.eac-elements__table-common a:focus {
+	text-decoration: none !important;
+	outline: 0 !important;
+}
+
+.eac-elements__table-common .eac-admin-help::after {
+	content: '?';
+	font-size: 15px;
+	color: white;
+}
+
+/** L'entête des pages de configuration */
+.eac-header-settings {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 1140px;
+	margin: 10px auto 30px;
+	height: auto;
+	padding: 10px;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 8px 21px 0px rgba(36, 39, 50, 0.08);
+	box-shadow: 0px 8px 21px 0px rgba(36, 39, 50, 0.08);
+}
+
+.eac-title-version {
+	font-weight: 600;
+}
+
+/** CSS pour les tabs */
+.eac-settings ul,
+.eac-settings li,
+.eac-settings div {
+	background: hsla(0, 0%, 0%, 0);
+	border: 0;
+	/*font-size: 100%;*/
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	/*font: 13px/20px "Droid Sans", Arial, "Helvetica Neue", "Lucida Grande", sans-serif;
+    text-shadow: 0 1px 0 hsl(0, 100%, 100%);*/
+}
+
+.eac-settings li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+.tabs-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tabs-nav li:first-child a {
+	/*border-right: 0;*/
+	-moz-border-radius-topleft: 6px;
+	-webkit-border-top-left-radius: 6px;
+	border-top-left-radius: 6px;
+}
+
+.tabs-nav li:last-child a {
+	border-top-right-radius: 6px;
+}
+
+.tabs-nav .tab-active a {
+	background: hsl(0, 100%, 100%);
+	border-bottom-color: hsla(0, 0%, 0%, 0);
+	color: hsl(85, 54%, 51%);
+	cursor: default;
+}
+
+.tabs-nav a {
+	background: hsl(120, 11%, 96%);
+	border: 1px solid hsl(210, 6%, 79%);
+	color: hsl(215, 6%, 57%);
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	height: 40px;
+	line-height: 44px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 140px;
+	text-decoration: none;
+}
+
+.tabs-nav li {
+	float: left;
+	margin-right: 5px;
+}
+
+.tabs-stage {
+	border: 1px solid hsl(210, 6%, 79%);
+	-webkit-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+	border-top: 0;
+	clear: both;
+	margin-bottom: 20px;
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.tabs-stage p {
+	margin: 0;
+	padding: 20px;
+	color: hsl(0, 0%, 33%);
+}
+
+/*----------------------------------------------*/
+/* CSS des tabs composants et features */
+.eac-saving-box {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/** Les bouton de soumission des formulaires */
+#eac-sumit {
+	margin-top: 1em;
+	color: white;
+	background-color: blue;
+	padding: 5px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+#eac-elements-saved,
+#eac-features-saved,
+#eac-wc-integration-saved,
+#eac-elements-notsaved,
+#eac-features-notsaved,
+#eac-wc-integration-notsaved,
+#eac-elements-to-save,
+#eac-features-to-save,
+#eac-wc-integration-to-save
+{
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-top: .5em;
+	display: none;
+}
+
+#eac-elements-saved,
+#eac-features-saved,
+#eac-wc-integration-saved,
+#eac-elements-to-save,
+#eac-features-to-save,
+#eac-wc-integration-to-save {
+	color: blue;
+}
+
+#eac-elements-notsaved,
+#eac-features-notsaved,
+#eac-wc-integration-notsaved {
+	color: red;
+}
+
+#eac-form-settings,
+#eac-form-features,
+#eac-form-wc-integration {
+	padding: 10px;
+}
+
+/** Cache les input checkbox standards */
+#eac-form-settings input[type="checkbox"],
+#eac-form-features input[type="checkbox"],
+#eac-form-wc-integration input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+}
+
+/** Normal Track */
+#eac-form-settings input[type="checkbox"].ios-switch+div,
+#eac-form-features input[type="checkbox"].ios-switch+div,
+#eac-form-wc-integration input[type="checkbox"].ios-switch+div {
+	vertical-align: middle;
+	width: 40px;
+	height: 20px;
+	border: 1px solid rgba(0, 0, 0, .4);
+	border-radius: 999px;
+	background-color: rgba(0, 0, 0, 0.1);
+	transition-duration: .4s;
+	transition-property: background-color, box-shadow;
+	-webkit-transition-duration: .4s;
+	-webkit-transition-property: background-color, box-shadow;
+	box-shadow: inset 0 0 0 0px rgba(0, 0, 0, 0.4);
+	margin: 15px 1.2em;
+	background-color: red;
+}
+
+/** Checked Track (Blue) */
+#eac-form-settings input[type="checkbox"].ios-switch:checked+div,
+#eac-form-features input[type="checkbox"].ios-switch:checked+div,
+#eac-form-wc-integration input[type="checkbox"].ios-switch:checked+div {
+	width: 40px;
+	background-position: 0 0;
+	background-color: #3b89ec;
+	border: 1px solid #0e62cd;
+	box-shadow: inset 0 0 0 10px rgba(59, 137, 259, 1);
+}
+
+/** Tiny Track */
+#eac-form-settings input[type="checkbox"].tinyswitch.ios-switch+div,
+#eac-form-features input[type="checkbox"].tinyswitch.ios-switch+div,
+#eac-form-wc-integration input[type="checkbox"].tinyswitch.ios-switch+div {
+	width: 34px;
+	height: 18px;
+}
+
+/** Big Track */
+#eac-form-settings input[type="checkbox"].bigswitch.ios-switch+div,
+#eac-form-features input[type="checkbox"].bigswitch.ios-switch+div,
+#eac-form-wc-integration input[type="checkbox"].bigswitch.ios-switch+div {
+	width: 50px;
+	height: 25px;
+}
+
+/** Green Track */
+#eac-form-settings input[type="checkbox"].green.ios-switch:checked+div,
+#eac-form-features input[type="checkbox"].green.ios-switch:checked+div,
+#eac-form-wc-integration input[type="checkbox"].green.ios-switch:checked+div {
+	background-color: #00e359;
+	border: 1px solid rgba(0, 162, 63, 1);
+	box-shadow: inset 0 0 0 10px rgba(0, 227, 89, 1);
+}
+
+/** Normal Knob */
+#eac-form-settings input[type="checkbox"].ios-switch+div>div,
+#eac-form-features input[type="checkbox"].ios-switch+div>div,
+#eac-form-wc-integration input[type="checkbox"].ios-switch+div>div {
+	float: left;
+	width: 18px;
+	height: 18px;
+	border-radius: inherit;
+	background: #ffffff;
+	transition-timing-function: cubic-bezier(.54, 1.85, .5, 1);
+	transition-duration: 0.4s;
+	transition-property: transform, background-color, box-shadow;
+	-webkit-transition-timing-function: cubic-bezier(.54, 1.85, .5, 1);
+	-webkit-transition-duration: 0.4s;
+	-webkit-transition-property: transform, background-color, box-shadow;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+	margin-top: 1px;
+	margin-left: 1px;
+}
+
+/** Checked Knob (Blue Style) */
+#eac-form-settings input[type="checkbox"].ios-switch:checked+div>div,
+#eac-form-features input[type="checkbox"].ios-switch:checked+div>div,
+#eac-form-wc-integration input[type="checkbox"].ios-switch:checked+div>div {
+	transform: translate3d(20px, 0, 0);
+	-webkit-transform: translate3d(20px, 0, 0);
+	background-color: #ffffff;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172, 1);
+}
+
+/** Tiny Knob */
+#eac-form-settings input[type="checkbox"].tinyswitch.ios-switch+div>div,
+#eac-form-features input[type="checkbox"].tinyswitch.ios-switch+div>div,
+#eac-form-wc-integration input[type="checkbox"].tinyswitch.ios-switch+div>div {
+	width: 16px;
+	height: 16px;
+	margin-top: 1px;
+}
+
+/** Checked Tiny Knob (Blue Style) */
+#eac-form-settings input[type="checkbox"].tinyswitch.ios-switch:checked+div>div,
+#eac-form-features input[type="checkbox"].tinyswitch.ios-switch:checked+div>div,
+#eac-form-wc-integration input[type="checkbox"].tinyswitch.ios-switch:checked+div>div {
+	transform: translate3d(16px, 0, 0);
+	-webkit-transform: translate3d(16px, 0, 0);
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172, 1);
+}
+
+/** Big Knob */
+#eac-form-settings input[type="checkbox"].bigswitch.ios-switch+div>div,
+#eac-form-features input[type="checkbox"].bigswitch.ios-switch+div>div,
+#eac-form-wc-integration input[type="checkbox"].bigswitch.ios-switch+div>div {
+	width: 23px;
+	height: 23px;
+	margin-top: 1px;
+}
+
+/** Checked Big Knob (Blue Style) */
+#eac-form-settings input[type="checkbox"].bigswitch.ios-switch:checked+div>div,
+#eac-form-features input[type="checkbox"].bigswitch.ios-switch:checked+div>div,
+#eac-form-wc-integration input[type="checkbox"].bigswitch.ios-switch:checked+div>div {
+	transform: translate3d(25px, 0, 0);
+	-webkit-transform: translate3d(25px, 0, 0);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172, 1);
+}
+
+/** Green Knob */
+#eac-form-settings input[type="checkbox"].green.ios-switch:checked+div>div,
+#eac-form-features input[type="checkbox"].green.ios-switch:checked+div>div,
+#eac-form-wc-integration input[type="checkbox"].green.ios-switch:checked+div>div {
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 162, 63, 1);
+}

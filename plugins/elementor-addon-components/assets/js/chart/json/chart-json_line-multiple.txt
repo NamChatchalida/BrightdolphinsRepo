@@ -1,0 +1,28 @@
+{
+    "title": "Mariages en France (INSEE)",
+    "labels": "1995,2000,2005,2010,2013,2014,2015,2016,2017,2018,2019",
+    "datasets":
+    [{
+            "label": "Sexe différent",
+            "data": "261.8,305.2,283,251.6,305.2,230.7,228.5,225.6,226.6,228.3,221"
+        }, {
+            "label": "Même sexe",
+            "data": "0,0,0,0,7.3,10.5,7.7,7.1,7.2,6.3,6"
+    }],
+    "options": {
+        "stacked": "0",
+        "stepped": "0",
+        "x_axis": {
+            "title": ""
+        },
+        "y_axis": {
+            "title": "Années",
+            "suffix": ""
+        },
+        "y_axis2": {
+            "display": "0",
+            "title": "En millier",
+            "suffix": ""
+        }
+    }
+}

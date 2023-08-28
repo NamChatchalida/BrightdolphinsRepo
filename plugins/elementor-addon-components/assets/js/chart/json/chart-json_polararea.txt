@@ -1,0 +1,28 @@
+{
+    "title": "Polar Area Chart",
+    "labels": "One,Two,Three,Four,Five,Six",
+    "datasets":
+    [{
+            "label": "Serie 1",
+            "data": "32,21,19.3,25,51,33"
+        },{
+            "label": "Serie 2",
+            "data": "49,39.7,49.3,35,32,63"
+    }],
+    "options": {
+        "stacked": "0",
+        "stepped": "0",
+        "x_axis": {
+            "title": ""
+        },
+        "y_axis": {
+            "title": "",
+            "suffix": ""
+        },
+        "y_axis2": {
+            "display": "0",
+            "title": "",
+            "suffix": ""
+        }
+    }
+}

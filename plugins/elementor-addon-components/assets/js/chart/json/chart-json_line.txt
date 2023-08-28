@@ -1,0 +1,25 @@
+{
+    "title": "Simple line",
+    "labels": "2014,2015,2016,2017,2018,2019",
+    "datasets":
+    [{
+            "label": "Random color",
+            "data": "12.5,19,-13,5.7,2,3"
+    }],
+    "options": {
+        "stacked": "0",
+        "stepped": "0",
+        "x_axis": {
+            "title": "Title X axis"
+        },
+        "y_axis": {
+            "title": "Title Y axis",
+            "suffix": ""
+        },
+        "y_axis2": {
+            "display": "0",
+            "title": "",
+            "suffix": ""
+        }
+    }
+}

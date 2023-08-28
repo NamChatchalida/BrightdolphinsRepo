@@ -1,0 +1,28 @@
+{
+    "title": "Taux de chômage selon le sexe (INSEE)",
+    "labels": "2018-Q3,2018-Q4,2019-Q1,2019-Q2,2019-Q3,2019-Q4",
+    "datasets":
+    [{
+            "label": "Hommes",
+            "data": "9.1,8.7,8.7,8.5,8.6,8.3"
+        }, {
+            "label": "Femmes",
+            "data": "8.9,8.8,8.7,8.4,8.4,8"
+    }],
+    "options": {
+        "stacked": "0",
+        "stepped": "0",
+        "x_axis": {
+            "title": "Trimestriel"
+        },
+        "y_axis": {
+            "title": "Taux de chômage",
+            "suffix": "£"
+        },
+        "y_axis2": {
+            "display": "0",
+            "title": "",
+            "suffix": ""
+        }
+    }
+}

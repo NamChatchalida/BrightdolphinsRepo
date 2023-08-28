@@ -1,0 +1,25 @@
+{
+    "title": "Les émissions de CO2 par habitant dans le monde",
+    "labels": "Quatar,Koweit,Arabie Saoudite,Canada,Etats-Unis,Allemagne,Chine,Espagne,France,Moyenne mondiale",
+    "datasets":
+    [{
+            "label": "CO2",
+            "data": "37,23.4,19.3,16.8,15.7,9.7,7.7,6.9,5.2,4.9"
+    }],
+    "options": {
+        "stacked": "0",
+        "stepped": "0",
+        "x_axis": {
+            "title": ""
+        },
+        "y_axis": {
+            "title": "En tonnes",
+            "suffix": ""
+        },
+        "y_axis2": {
+            "display": "0",
+            "title": "",
+            "suffix": ""
+        }
+    }
+}

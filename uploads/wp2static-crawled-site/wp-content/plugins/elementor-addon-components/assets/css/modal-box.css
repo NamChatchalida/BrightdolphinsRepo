@@ -1,0 +1,240 @@
+/** le composant et ses liens */
+.eac-modal-box a,
+.eac-modal-box a:visited,
+.eac-modal-box a:active {
+	text-decoration: none !important;
+	outline: 0 none !important;
+}
+
+.eac-modal-box::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/** Certain contenu sont cachés pour être affiché dans la Fancybox  */
+.mb-modalbox__hidden-content-wrapper {
+	display: none;
+	padding: 20px;
+	overflow-y: auto;
+}
+
+/** Elementor section stretched */
+.mb-modalbox__hidden-content-wrapper section.elementor-section-stretched {
+	max-width: 100%;
+	left: 0 !important;
+}
+
+/** Le titre à afficher dans la Fancybox */
+.mb-modalbox__hidden-content-title {
+	position: relative;
+	text-align: center;
+}
+
+.mb-modalbox__hidden-content-title h3 {
+	margin-bottom: 0px;
+	line-height: unset;
+}
+
+/** Le contenu à afficher dans la Fancybox */
+.mb-modalbox__hidden-content-body {
+	position: relative;
+	height: auto;
+	margin-top: 10px;
+}
+
+.mb-modalbox__hidden-content-body div,
+.mb-modalbox__hidden-content-body a {
+	line-height: 1.3em;
+}
+
+/** La couleur ou l'image background */
+.mb-modalbox__hidden-content-body-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/** Déclencheurs bouton ou texte */
+.mb-modalbox__wrapper-trigger {
+	cursor: pointer;
+}
+
+/** Style des boutons déclencheurs  */
+.mb-modalbox__wrapper-btn {
+	color: #FFFFFF;
+	background-color: #1569AE;
+	border-radius: 8px;
+	box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+	min-width: unset;
+}
+
+.mb-modalbox__wrapper-btn:hover {
+	color: #FFFFFF;
+	background-color: #1569AE;
+}
+
+.mb-modalbox__wrapper-btn:focus,
+.mb-modalbox__wrapper-btn:visited {
+	color: #FFFFFF;
+	background-color: #1569AE;
+	outline: none !important;
+}
+
+/** Type de bouton */
+.mb-modalbox__btn-sm {
+	padding: 8px 14px;
+	font-size: 14px;
+	line-height: 1em;
+}
+
+.mb-modalbox__btn-md {
+	padding: 10px 16px;
+	font-size: 16px;
+	line-height: 1.2em;
+}
+
+.mb-modalbox__btn-lg {
+	padding: 12px 24px;
+	font-size: 18px;
+	line-height: 1.3333em;
+}
+
+.mb-modalbox__btn-block {
+	display: block;
+	padding: 10px 16px;
+	font-size: 18px;
+	width: 100%;
+}
+
+/** Animation Fancybox */
+.fancybox-fx-slide-in-out-right.fancybox-slide--previous {
+	transform: translateX(-100%);
+}
+
+.fancybox-fx-slide-in-out-right.fancybox-slide--next {
+	transform: translateX(100%);
+}
+
+.fancybox-fx-slide-in-out-right.fancybox-slide--current {
+	transform: translateX(0);
+}
+
+.fancybox-fx-slide-in-out-left.fancybox-slide--previous {
+	transform: translateX(100%);
+}
+
+.fancybox-fx-slide-in-out-left.fancybox-slide--next {
+	transform: translateX(-100%);
+}
+
+.fancybox-fx-slide-in-out-left.fancybox-slide--current {
+	transform: translateX(0);
+}
+
+.fancybox-fx-slide-in-out-top.fancybox-slide--previous {
+	transform: translateY(100%);
+}
+
+.fancybox-fx-slide-in-out-top.fancybox-slide--next {
+	transform: translateY(-100%);
+}
+
+.fancybox-fx-slide-in-out-top.fancybox-slide--current {
+	transform: translateY(0);
+}
+
+.fancybox-fx-slide-in-out-bottom.fancybox-slide--previous {
+	transform: translateY(-100%);
+}
+
+.fancybox-fx-slide-in-out-bottom.fancybox-slide--next {
+	transform: translateY(100%);
+}
+
+.fancybox-fx-slide-in-out-bottom.fancybox-slide--current {
+	transform: translateY(0);
+}
+
+/** Hauteur de la fancy-box par défaut */
+.fancybox-content {
+	height: auto;
+}
+
+/** Postion de la Fancybox */
+.modal-topleft .fancybox-content {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+.modal-topright .fancybox-content {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.modal-bottomleft .fancybox-content {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+}
+
+.modal-bottomright .fancybox-content {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
+
+@media (max-width: 768px) {
+
+	.modal-topleft .fancybox-content,
+	.modal-bottomleft .fancybox-content {
+		left: 0;
+	}
+
+	.modal-topright .fancybox-content,
+	.modal-bottomright .fancybox-content {
+		right: 0;
+	}
+}
+
+/** La boîte n'est pas modale */
+.mb-modalbox_no-modal .fancybox-bg,
+.mb-modalbox_no-modal .fancybox-infobar,
+.mb-modalbox_no-modal .fancybox-toolbar,
+.mb-modalbox_no-modal .fancybox-caption,
+.mb-modalbox_no-modal .fancybox-navigation,
+.mb-modalbox_no-modal .fancybox-button {
+	display: none;
+}
+
+.mb-modalbox_no-modal.no-modal_topleft {
+	bottom: auto;
+	right: auto;
+	top: 0;
+	left: 0;
+}
+
+.mb-modalbox_no-modal.no-modal_topright {
+	left: auto;
+	bottom: auto;
+	top: 0;
+	right: 0;
+}
+
+.mb-modalbox_no-modal.no-modal_bottomleft {
+	top: auto;
+	right: auto;
+	bottom: 0;
+	left: 0;
+}
+
+.mb-modalbox_no-modal.no-modal_bottomright {
+	top: auto;
+	left: auto;
+	bottom: 0;
+	right: 0;
+}

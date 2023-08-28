@@ -1,0 +1,116 @@
+/** le composant et ses liens */
+.eac-image-promo a,
+.eac-image-promo a:visited,
+.eac-image-promo a:active {
+	text-decoration: none !important;
+	outline: 0 none !important;
+}
+
+.ip-wrapper {
+	background-color: #b98f1c;
+	min-height: 1px;
+	padding: 5px;
+}
+
+.ip-icone {
+	text-align: center;
+	margin: 20px auto;
+}
+
+.ip-image {
+	margin-bottom: 10px !important;
+}
+
+.ip-wrapper .ip-title {
+	color: #FFF;
+	font-size: 1.8em;
+	/*font-weight: 600;
+	margin-bottom: 15px;
+	line-height: 1.3em;*/
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.ip-wrapper .ip-title:after {
+	content: '';
+	border-color: #FFF;
+	border-top: 2px solid;
+	width: 85%;
+	display: block;
+	margin: 10px auto;
+}
+
+.ip-description {
+	background-color: transparent !important;
+	margin-bottom: 15px;
+}
+
+.ip-description .ip-description-item {
+	padding: 0;
+	font-size: 0.9em;
+	margin-left: 5px;
+}
+
+.ip-description .ip-description-item .fa-check {
+	color: green;
+}
+
+.ip-description .ip-description-item .fa-times {
+	color: red;
+}
+
+.ip-description .ip-description-item>span {
+	color: #FFF;
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.ip-description .ip-description-item>span>span {
+	margin-right: .5rem;
+}
+
+.ip-description .ip-description-item>span>span>span {
+	line-height: 1.7em;
+}
+
+.ip-description .ip-description-item>span a {
+	color: #FFF;
+}
+
+.strike-item {
+	text-decoration: line-through;
+}
+
+.ip-prix {
+	margin: 0 10px 20px 10px;
+	background-color: #e2bc74;
+	color: #FFF;
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 1.3em;
+	border-radius: 3px;
+}
+
+.ip-button-wrapper {
+	text-align: center;
+}
+
+.ip-button-wrapper a {
+	text-decoration: none !important;
+}
+
+.ip-button {
+	display: inline-block !important;
+	/* Attention au ccs image-ribbon.css = .eac-image-promo span: display: block; */
+	color: #FFF;
+	font-size: 0.9em;
+	background-color: #e2bc74;
+	padding: 10px 25px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+
+.ip-button-wrapper .ip-button i {
+	margin-right: .35em;
+}
